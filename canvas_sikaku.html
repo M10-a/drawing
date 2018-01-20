@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>四角</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script>
+$(function(){
+  var can = $("#canvas")[0];
+  var ctx = can.getContext("2d");
+  //パスの開始
+  ctx.beginPath();
+  //四角線を設定
+  ctx.rect(0,0,60,60);
+  //線を描く
+  ctx.stroke();
+});
+</script>
+</head>
+<body>
+<canvas id="canvas" width="500" height="300"></canvas>
+</body>
+</html>
